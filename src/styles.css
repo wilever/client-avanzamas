@@ -1,0 +1,25 @@
+div .button{
+    text-align: right;
+    padding-right: 1%;
+}
+h2 {
+    text-align: center;
+}
+.topnav {
+    background-color: #006dcc;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:focus, a:hover {
+    background-color: #fff;
+    color: black ;
+    text-decoration: none;
+}

@@ -1,0 +1,44 @@
+<div *ngIf="!showHistory">
+<h2>Lista de compradores</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Identificador</th>
+    <th>Nombre</th>
+    <th>Acciones</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let buyer of buyers">
+    <td>{{buyer.buyerId}}</td>
+    <td>{{buyer.name}}</td>
+    <td>
+        <button class="btn btn-primary" (click)="getSaleHistory(buyer)" >Historial de ventas</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<div *ngIf="showHistory">
+    <h2>Historial de ventas de: {{buyer.name}}</h2>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Ciudad</th>
+        <th>Cantidad</th>
+        <th>Valor</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let sale of sales">
+        <td>{{sale.cityName}}</td>
+        <td>{{sale.quantity}}</td>
+        <td>{{sale.value}}</td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="button">
+      <button class="btn btn-primary" (click)="showHistory=false">Atras</button>
+    </div>
+    </div>
