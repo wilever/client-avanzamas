@@ -1,15 +1,20 @@
 {
-  "name": "portal-app",
-  "version": "0.0.0",
+  "name": "client-avanzamas",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.config.json",
-    "build": "ng build -prod –output-path META-INF/resources",
+    "start": "node server.js",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.0"
+    },
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.0.0",
@@ -24,7 +29,9 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "typescript": "~2.3.3",
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "@angular/cli": "^1.6.3",
