@@ -13,7 +13,7 @@
   },
   "engines": {
     "node": "8.11.3",
-    "npm": "5.6.0"
+    "npm": "5.7.1"
     },
   "private": true,
   "dependencies": {
@@ -30,8 +30,8 @@
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14",
-    "typescript": "^2.4.2",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "typescript": "~2.4.2"
   },
   "devDependencies": {
     "@angular/cli": "^1.6.3",
@@ -52,6 +52,7 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
-    "typescript": "~2.4.2"
+    "typescript": "~2.4.2",
+    "enhanced-resolve": "^3.3.0"
   }
 }
