@@ -21,6 +21,7 @@ export class SaleComponent implements OnInit {
   public buyers: Buyer[];
   public cities: City[];
   public countries: Country[];
+  public countryName: string;
   constructor(
     private service: SaleService,
     private buyerService: BuyerService) {
