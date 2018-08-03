@@ -20,6 +20,6 @@ Muestra la documentación de la api-avanzamas.
 
 ***********
 
-Enlace del cliente: https://cliente-avanzamas.herokuapp.com/
+Enlace del cliente: https://client-avanzamas.herokuapp.com/
 
 Contacto con el desarrollador: wilevergomez@gmail.com
