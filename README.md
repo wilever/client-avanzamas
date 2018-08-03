@@ -13,10 +13,10 @@ Reporte de los últimos seis meses indicando cantidad de unidades vendidas y gan
 Lista de compradores y acceso al historial de ventas de cada uno de ellos.
 
 ## Lista de ciudades
-Lista de ciudades disponibles en el sistema
+Lista de ciudades disponibles en el sistema.
 
 ## Documentación
-Muestra la documentación de la api-avanzamas disponible en: https://github.com/wilever/api-avanzamas
+Muestra la documentación de la api-avanzamas.
 
 ***********
 
