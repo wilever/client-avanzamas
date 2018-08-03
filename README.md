@@ -1,27 +1,25 @@
-# PortalApp
+# Client para AvanzaMas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+Este cliente permite consumir la api rest disponible en: https://github.com/wilever/api-avanzamas. 
+Las funciones disponibles son las siguientes:
 
-## Development server
+## Gestión de usuarios
+Listar usarios disponibles, agregar nuevo usuario, editar alguno existente y eliminarlo.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Reporte de ventas
+Reporte de los últimos seis meses indicando cantidad de unidades vendidas y ganancias por mes. Asi mismo puede visualizarse la misma información por paises.
 
-## Code scaffolding
+## Historial de ventas
+Lista de compradores y acceso al historial de ventas de cada uno de ellos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Lista de ciudades
+Lista de ciudades disponibles en el sistema.
 
-## Build
+## Documentación
+Muestra la documentación de la api-avanzamas.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+***********
 
-## Running unit tests
+Enlace del cliente: https://client-avanzamas.herokuapp.com/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Contacto con el desarrollador: wilevergomez@gmail.com
