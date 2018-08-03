@@ -14,7 +14,8 @@ export class UserComponent implements OnInit {
   public newData: boolean;
   public user: User = new User;
   public users: User[];
-  constructor(private router: Router, private userService: UserService) {
+  public loading: boolean;
+  constructor(private userService: UserService) {
   }
 
   ngOnInit() {
@@ -24,9 +25,13 @@ export class UserComponent implements OnInit {
   }
 
   getUsers(): void {
+    this.loading = true;
     this.userService.getUsers()
       .subscribe(
-        ok => this.users = ok,
+        ok => {
+            this.users = ok;
+            this.loading = false;
+          },
         error => this.showError(error));
   }
 
@@ -71,10 +76,12 @@ export class UserComponent implements OnInit {
   }
 
   deleteUser(user: User): void {
+    if (window.confirm('El registro será borrado')) {
     this.userService.deleteUser(user)
       .subscribe(
         data => this.deleteOk(data),
         error => this.showError(error));
+    }
   }
 
   deleteOk(data: any) {

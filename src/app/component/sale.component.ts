@@ -22,6 +22,7 @@ export class SaleComponent implements OnInit {
   public cities: City[];
   public countries: Country[];
   public countryName: string;
+  public loading: boolean;
   constructor(
     private service: SaleService,
     private buyerService: BuyerService) {
@@ -31,15 +32,23 @@ export class SaleComponent implements OnInit {
     this.getCountries();
   }
   getReport(): void {
+    this.loading = true;
     this.service.getReport()
       .subscribe(
-        ok => this.reports = ok,
+        ok => {
+          this.reports = ok;
+          this.loading = false;
+        },
         error => this.showError(error));
   }
   getReportByCountry(country: string): void {
+    this.loading = true;
     this.service.getReportByCountry(country)
       .subscribe(
-        ok => this.reportByCountry = ok,
+        ok => {
+          this.reportByCountry = ok;
+          this.loading = false;
+        },
         error => this.showError(error));
   }
   getCountries(): void {
