@@ -1,6 +1,7 @@
 # Client para AvanzaMas
 
-Este cliente permite consumir una api rest. Las funciones disponibles son las siguientes:
+Este cliente permite consumir la api rest disponible en: https://github.com/wilever/api-avanzamas. 
+Las funciones disponibles son las siguientes:
 
 ## Gestión de usuarios
 Listar usarios disponibles, agregar nuevo usuario, editar alguno existente y eliminarlo.
@@ -16,6 +17,8 @@ Lista de ciudades disponibles en el sistema
 
 ## Documentación
 Muestra la documentación de la api-avanzamas disponible en: https://github.com/wilever/api-avanzamas
+
+***********
 
 Enlace del cliente: https://cliente-avanzamas.herokuapp.com/
 
